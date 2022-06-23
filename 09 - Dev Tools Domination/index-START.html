@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Console Tricks!</title>
 </head>
+
 <body>
 
   <p onClick="makeGreen()">×BREAK×DOWN×</p>
@@ -20,27 +22,50 @@
     // Regular
 
     // Interpolated
+    console.log('hi i am a string', 'd');
+
 
     // Styled
+    // console.log('%c i am text', 'font-size: 50px; background: red; text-shadow: 10px 10px 0 blue;')
 
     // warning!
+    console.warn('oh no');
 
     // Error :|
+    console.error('oops');
 
     // Info
+    console.info('crocodiles eat 3-4 people per year');
 
     // Testing
+    const p = document.querySelector('p');
+    console.assert(p.classList.contains('ouch'), 'that is wrong');
 
     // clearing
+    console.clear();
 
     // Viewing DOM Elements
+    console.log(p);
+    console.dir(p);
+
+    console.clear();
 
     // Grouping together
+    // dogs.forEach(dog => {
+    //   console.group(`${dog.name}`)
+    //   console.log(`this is ${dog.name}`);
+    //   console.log(`${dog.name} is ${dog.age * 7} dogyears old`);
+    //   console.groupEnd(`${dog.name`);
+    // })
 
     // counting
+    console.count('seb');
 
     // timing
+    console.time('fetching data');
+
 
   </script>
 </body>
+
 </html>
